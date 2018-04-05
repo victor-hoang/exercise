@@ -2,13 +2,12 @@ doctype html
 html
   head
     title
-      | Twitter Clone
+      | Twitter Clone Ruby Admin Page
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = javascript_pack_tag    'application'
   body
-    = render 'layouts/header'
-    .container
+    .container-fluid
       = flash_messages
       = yield
