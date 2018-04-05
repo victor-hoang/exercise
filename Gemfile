@@ -20,6 +20,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'bundler-audit', require: false
+  gem 'brakeman', require: false
 end
 
 group :development do
