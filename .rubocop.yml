@@ -12,6 +12,7 @@ AllCops:
     - lib/tasks/dev.rake
     - Gemfile
     - lib/tasks/auto_annotate_models.rake
+    - spec/rails_helper.rb
 Bundler/OrderedGems:
   Exclude:
     - Gemfile
