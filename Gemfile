@@ -30,6 +30,7 @@ group :development do
   gem 'overcommit'
   gem 'foreman'
   gem 'scss_lint', require: false
+  gem 'slim_lint', require: false
 end
 
 group :test do
