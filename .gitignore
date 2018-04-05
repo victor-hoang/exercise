@@ -1,4 +1,4 @@
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Rails.gitignore
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/Rails.gitignore
 
 *.rbc
 capybara-*.html
@@ -10,19 +10,13 @@ capybara-*.html
 /public/system
 /coverage/
 /spec/tmp
-*.orig
+**.orig
 rerun.txt
 pickle-email-*.html
 
-# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
-
-# Only include if you have production secrets in this file, which is no longer a Rails default
-# config/secrets.yml
-
-# dotenv
-# TODO Comment out this rule if environment variables can be committed
-.env
+config/secrets.yml
 
 ## Environment normalization:
 /.bundle
@@ -46,7 +40,7 @@ bower.json
 .byebug_history
 
 
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Ruby.gitignore
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/Ruby.gitignore
 
 *.gem
 *.rbc
@@ -60,24 +54,10 @@ bower.json
 /test/version_tmp/
 /tmp/
 
-# Used by dotenv library to load environment variables.
-# .env
-
 ## Specific to RubyMotion:
 .dat*
 .repl_history
 build/
-*.bridgesupport
-build-iPhoneOS/
-build-iPhoneSimulator/
-
-## Specific to RubyMotion (use of CocoaPods):
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# vendor/Pods/
 
 ## Documentation cache and generated files:
 /.yardoc/
@@ -100,7 +80,7 @@ build-iPhoneSimulator/
 .rvmrc
 
 
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Global/Emacs.gitignore
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/Global/Emacs.gitignore
 
 # -*- mode: gitignore; -*-
 *~
@@ -134,40 +114,12 @@ tramp
 
 # cask packages
 .cask/
-dist/
-
-# Flycheck
-flycheck_*.el
 
 # server auth directory
 /server/
 
-# projectiles files
-.projectile
 
-# directory configuration
-.dir-locals.el
-
-
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Global/Vim.gitignore
-
-# Swap
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-v][a-z]
-[._]sw[a-p]
-
-# Session
-Session.vim
-
-# Temporary
-.netrwhist
-*~
-# Auto-generated tag files
-tags
-
-
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Global/Linux.gitignore
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/Global/Linux.gitignore
 
 *~
 
@@ -180,13 +132,9 @@ tags
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
 
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/Global/OSX.gitignore
 
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Global/macOS.gitignore
-
-# General
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -205,7 +153,6 @@ Icon
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
-.com.apple.timemachine.donotpresent
 
 # Directories potentially created on remote AFP share
 .AppleDB
@@ -215,60 +162,63 @@ Temporary Items
 .apdisk
 
 
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Sass.gitignore
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/SASS.gitignore
 
 .sass-cache/
 *.css.map
 
 
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Global/SublimeText.gitignore
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/Global/SublimeText.gitignore
 
-# Cache files for Sublime Text
+# cache files for sublime text
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
 
-# Workspace files are user-specific
+# workspace files are user-specific
 *.sublime-workspace
 
-# Project files should be checked into the repository, unless a significant
-# proportion of contributors will probably not be using Sublime Text
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
 # *.sublime-project
 
-# SFTP configuration file
+# sftp configuration file
 sftp-config.json
 
-# Package control specific files
-Package Control.last-run
-Package Control.ca-list
-Package Control.ca-bundle
-Package Control.system-ca-bundle
-Package Control.cache/
-Package Control.ca-certs/
-Package Control.merged-ca-bundle
-Package Control.user-ca-bundle
-oscrypto-ca-bundle.crt
-bh_unicode_properties.cache
 
-# Sublime-github package stores a github token in this file
-# https://packagecontrol.io/packages/sublime-github
-GitHub.sublime-settings
-
-
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Global/TextMate.gitignore
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/Global/TextMate.gitignore
 
 *.tmproj
 *.tmproject
 tmtags
 
 
-### https://raw.github.com/github/gitignore/dc0ca6d8d5e61dae1bd051f9a99c1414890069f6/Global/Vagrant.gitignore
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/Global/Vagrant.gitignore
 
-# General
 .vagrant/
 
-# Log files (if you are creating logs in debug mode, uncomment this)
-# *.logs
+
+### https://raw.github.com/github/gitignore/fa441f903154d8159ef71db23d4816d802450fef/Global/vim.gitignore
+
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# persistent undo
+*.un~
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
 
 
 .envrc
+/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+.yarn-integrity/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+.yarn-integrity
