@@ -14,6 +14,7 @@ gem 'slim-rails'
 gem 'webpacker'
 gem 'bootstrap'
 gem 'simple_form'
+gem 'settingslogic'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
