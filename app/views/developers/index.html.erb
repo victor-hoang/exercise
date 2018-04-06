@@ -1,0 +1,13 @@
+<%= form_for @developer_search_form, url:'/developers/search',  method: :post do |f| %>
+ <%= f.select :programming_language_id, ProgrammingLanguage.pluck(:name, :id), prompt: 'Select Programming Language', name: 'Programming Language' %>
+ <%= f.select :language_id, Language.pluck(:code, :id), prompt: 'Select Language', name: 'Language' %>
+ <%= f.submit 'Search' %>
+<% end %>
+
+<ul>
+ <% if(@developers) %>
+  <% @developers.each do |developer| %>
+    <li><%= developer.email %></li>
+  <% end %>
+ <%end%>
+</ul>
