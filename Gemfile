@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'settingslogic'
 gem 'virtus'
 gem 'turbolinks', '~> 5'
+gem 'active_model_serializers'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

@@ -4,4 +4,10 @@ Rails.application.routes.draw do
   resources :developers
 
   post '/developers/search', to: 'developers#search'
+
+  namespace :api do
+    namespace :v1 do
+        resources :developers, only: [:show, :index]
+    end
+  end
 end
