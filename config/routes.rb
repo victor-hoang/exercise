@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: 'developers#index'
+  resources :developers
+
+  post '/developers/search', to: 'developers#search'
+
+  namespace :api do
+    namespace :v1 do
+        resources :developers, only: [:show, :index]
+    end
+  end
 end
