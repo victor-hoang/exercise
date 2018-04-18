@@ -15,6 +15,8 @@ gem 'webpacker'
 gem 'bootstrap'
 gem 'simple_form'
 gem 'settingslogic'
+gem 'virtus'
+gem 'turbolinks', '~> 5'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -22,6 +24,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'bundler-audit', require: false
   gem 'brakeman', require: false
+  gem 'faker'
 end
 
 group :development do
