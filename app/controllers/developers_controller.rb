@@ -15,7 +15,7 @@ class DevelopersController < ApplicationController
   private
 
   def search_params
-    params.require('developer_search_form')
+    params.require(:developer_search_form)
           .permit(:programming_language, :language)
   end
 end

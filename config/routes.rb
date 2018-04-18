@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root to: 'developers#index'
   resources :developers
 
-  post '/developers/search', to: 'developers#search'
+  get '/developers/search', to: 'developers#search'
 end

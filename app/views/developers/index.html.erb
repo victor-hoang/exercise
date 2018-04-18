@@ -1,13 +1,20 @@
-<%= form_for @developer_search_form, url:'/developers/search',  method: :post do |f| %>
- <%= f.select :programming_language_id, ProgrammingLanguage.pluck(:name, :id), prompt: 'Select Programming Language', name: 'Programming Language' %>
- <%= f.select :language_id, Language.pluck(:code, :id), prompt: 'Select Language', name: 'Language' %>
- <%= f.submit 'Search' %>
+<%= form_for @developer_search_form, url:'/developers/search',  method: :get do |f| %>
+  <%= f.select :programming_language_id, ProgrammingLanguage.pluck(:name, :id), prompt: 'Select Programming Language', name: 'Programming Language' %>
+  <%= f.select :language_id, Language.pluck(:code, :id), prompt: 'Select Language', name: 'Language' %>
+  <%= f.submit 'Search' %>
 <% end %>
 
-<ul>
- <% if(@developers) %>
+<table style="width:100%">
+  <tr>
+    <th>email</th>
+    <th>programming_languagues </th>
+    <th>languagues</th>
+  </tr>
   <% @developers.each do |developer| %>
-    <li><%= developer.email %></li>
+  <tr>
+    <td><%= developer.email %></td>
+    <td><%= developer.languages.pluck(:code).join(",") %></td>
+    <td><%= developer.programming_languages.pluck(:name).join(",") %></td>
+  </tr>
   <% end %>
- <%end%>
-</ul>
+</table>
